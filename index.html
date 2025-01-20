@@ -63,11 +63,26 @@
         .event-description {
             font-size: 0.95em;
         }
-        .green {
-            color: #00ff00; /* Green for apps */
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin-top: 10px;
         }
-        .red {
-            color: #ff4d4d; /* Red for banned apps */
+        button:hover {
+            background: #0056b3;
+        }
+        .more-info {
+            display: none;
+            font-size: 0.9em;
+            color: #ccc;
+            margin-top: 10px;
+            padding-left: 10px;
+            border-left: 2px solid #555;
         }
         footer {
             background: #222;
@@ -85,45 +100,63 @@
         footer a:hover {
             text-decoration: underline;
         }
-        .backlinks {
-            margin-top: 10px;
-            font-size: 0.9em;
-            color: #888;
-        }
-        .backlinks a {
-            color: #888;
-        }
-        .backlinks a:hover {
-            color: #fff;
-        }
     </style>
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = info.style.display === 'none' || !info.style.display ? 'block' : 'none';
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <h1>The TikTok Revolution</h1>
         <h2>ByteDance's Innovations and Challenges</h2>
         <div class="timeline">
-            <!-- Timeline events here -->
+            <!-- ByteDance Founded -->
             <div class="timeline-event">
                 <div class="event-year">2012</div>
                 <div class="event-title">ByteDance Founded</div>
                 <p class="event-description">
                     ByteDance was founded by Zhang Yiming in Beijing. It started as a news aggregator company, showing early signs of powerful AI-driven content recommendation systems.
                 </p>
+                <button onclick="toggleInfo('info-2012')">Learn More</button>
+                <div id="info-2012" class="more-info">
+                    <p>ByteDance's first major product was Toutiao, a news aggregation app that became wildly popular in China, leveraging advanced AI algorithms for personalized content delivery.</p>
+                </div>
             </div>
-            <!-- More events... -->
+
+            <!-- Douyin and TikTok -->
+            <div class="timeline-event">
+                <div class="event-year">2016</div>
+                <div class="event-title green">Douyin (China) and TikTok (Global)</div>
+                <p class="event-description">
+                    ByteDance launched Douyin in China and TikTok for international audiences. TikTok became the first app to make short-form video a global phenomenon.
+                </p>
+                <button onclick="toggleInfo('info-2016')">Learn More</button>
+                <div id="info-2016" class="more-info">
+                    <p>Douyin became a cultural phenomenon in China, while TikTok's user-friendly interface, addictive algorithms, and global reach made it one of the most downloaded apps worldwide.</p>
+                </div>
+            </div>
+
+            <!-- TikTok U.S. Ban -->
+            <div class="timeline-event">
+                <div class="event-year">2020</div>
+                <div class="event-title red">TikTok Faces U.S. Ban</div>
+                <p class="event-description">
+                    The U.S. government raised national security concerns over TikTok, citing ByteDance's Chinese ownership. Discussions of potential bans began.
+                </p>
+                <button onclick="toggleInfo('info-2020')">Learn More</button>
+                <div id="info-2020" class="more-info">
+                    <p>The U.S. accused ByteDance of collecting sensitive user data and sharing it with the Chinese government, leading to investigations and political debates.</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <footer>
-        <p>Created by <a href="https://www.youtube.com/channel/UC_IT_Samurai_Teacher" target="_blank">IT Samurai Teacher</a></p>
-        <p>Explore technology and innovations on my <a href="https://www.youtube.com/channel/UC_IT_Samurai_Teacher" target="_blank">YouTube Channel</a>.</p>
-        <div class="backlinks">
-            <p>Recommended Backlinks:</p>
-            <a href="https://www.tiktok.com/" target="_blank">TikTok Official</a> |
-            <a href="https://www.bytedance.com/" target="_blank">ByteDance Official</a> |
-            <a href="https://www.youtube.com/" target="_blank">YouTube</a>
-        </div>
+        <p>Created by <a href="https://www.youtube.com/@ITSamuraiTeacher" target="_blank">IT Samurai Teacher</a></p>
+        <p>Explore technology and innovations on my <a href="https://www.youtube.com/@ITSamuraiTeacher" target="_blank">YouTube Channel</a>.</p>
     </footer>
 </body>
 </html>
