@@ -1,0 +1,54 @@
+MIT License with Attribution and Template Requirements
+
+Copyright (c) 2025 IT Samurai Teacher (Shihab Doole)
+
+Template Creation: Social Media Profile Template
+Creator: IT Samurai Teacher (Shihab Doole)
+YouTube: https://youtube.com/@ITSamuraiTeacher
+Website: https://samuraiteacher.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this template and associated documentation files (the "Template"), to deal in the Template with the following conditions:
+
+REQUIRED ATTRIBUTION:
+1. Users must maintain the following attributions:
+   - Footer credit: "Template created by IT Samurai Teacher"
+   - Copyright notice in the source code
+   - All embedded metadata and system resources
+   - Template identification comments
+
+PERMITTED USES:
+1. Users may:
+   - Use the template for personal profiles
+   - Use the template for commercial purposes
+   - Modify the design and content
+   - Add additional features
+   - Share their modified version (with attribution intact)
+
+PROHIBITED ACTIONS:
+1. Users may not:
+   - Remove or modify the attribution section
+   - Remove or modify any SEO-related metadata
+   - Redistribute the template as their own creation
+   - Sell or license the template to others
+   - Remove the copyright notice
+
+TEMPLATE-SPECIFIC TERMS:
+1. The template includes:
+   - HTML structure
+   - CSS styling
+   - JavaScript functionality
+   - Embedded metadata
+   - System resources
+   All components must remain intact unless explicitly permitted.
+
+2. Users acknowledge that:
+   - The template contains necessary system resources
+   - Backend functionality requires specific metadata
+   - Template updates may be provided
+   - Support is available through official channels
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+For questions or support:
+Contact: Hello@samuraiteacher.com
+YouTube: https://youtube.com/@ITSamuraiTeacher
