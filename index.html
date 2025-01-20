@@ -3,215 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The TikTok Revolution Timeline</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <title>TikTok Revolution Timeline</title>
+    <meta name="description" content="Explore the TikTok Revolution, from ByteDance's innovations to the challenges it faced in the global market. Learn about its apps and controversies.">
+    <meta name="keywords" content="TikTok, ByteDance, TikTok Revolution, Douyin, TikTok Ban, IT Samurai Teacher, TikTok Timeline, U.S. Ban, Short-form Video, ByteDance Apps">
+    <meta name="author" content="IT Samurai Teacher">
     <style>
-        .timeline-item {
-            opacity: 0;
-            transform: translateX(-20px);
-            transition: all 0.5s ease-out;
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #1a1a1a, #333);
+            color: white;
+            margin: 0;
+            padding: 0;
         }
-        
-        .timeline-item.visible {
-            opacity: 1;
-            transform: translateX(0);
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
         }
-
-        .critical-event {
-            background-color: rgba(153, 27, 27, 0.3);
-            border: 2px solid rgb(185, 28, 28);
+        h1, h2 {
+            text-align: center;
         }
-
-        .development-event {
-            background-color: rgba(161, 98, 7, 0.3);
-            border: 2px solid rgb(180, 83, 9);
+        h1 {
+            font-size: 2.5em;
+            color: #ff4d4d;
+            margin-bottom: 10px;
         }
-
-        .standard-event {
-            background-color: rgba(30, 58, 138, 0.3);
-            border: 2px solid rgb(29, 78, 216);
+        h2 {
+            font-size: 1.5em;
+            color: #ff7878;
         }
-
-        .pending-status {
-            color: rgb(251, 191, 36);
-            display: flex;
-            align-items: center;
-            margin-top: 1rem;
+        .timeline {
+            margin-top: 20px;
+            border-left: 2px solid #555;
+            padding-left: 20px;
+        }
+        .timeline-event {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .timeline-event::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            background: #ff4d4d;
+            border-radius: 50%;
+        }
+        .event-title {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .event-year {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .event-description {
+            font-size: 0.95em;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .more-info {
+            display: none;
+            font-size: 0.9em;
+            color: #ccc;
+            margin-top: 10px;
+            padding-left: 10px;
+            border-left: 2px solid #555;
+        }
+        .green {
+            color: #00ff00; /* Green for apps */
+        }
+        .red {
+            color: #ff4d4d; /* Red for banned apps */
+        }
+        footer {
+            background: #222;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+            color: #bbb;
+            border-top: 2px solid #555;
+        }
+        footer a {
+            color: #ff7878;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = info.style.display === 'none' || !info.style.display ? 'block' : 'none';
+        }
+    </script>
 </head>
-<body class="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 p-8">
-    <div class="max-w-4xl mx-auto">
-        <div class="text-center mb-8" id="header">
-            <h1 class="text-5xl font-bold mb-2 text-white">The TikTok Revolution</h1>
-            <h2 class="text-2xl font-semibold text-red-400">ByteDance's Rise and America's Response</h2>
-            <p class="text-gray-400 mt-4">A Journey from Startup to Current Crisis</p>
-        </div>
+<body>
+    <div class="container">
+        <h1>The TikTok Revolution</h1>
+        <h2>ByteDance's Innovations and Challenges</h2>
+        <div class="timeline">
+            <!-- ByteDance Founded -->
+            <div class="timeline-event">
+                <div class="event-year">2012</div>
+                <div class="event-title">ByteDance Founded</div>
+                <p class="event-description">
+                    ByteDance was founded by Zhang Yiming in Beijing. It started as a news aggregator company, showing early signs of powerful AI-driven content recommendation systems.
+                </p>
+                <button onclick="toggleInfo('info-2012')">Learn More</button>
+                <div id="info-2012" class="more-info">
+                    <p>ByteDance's first major product was Toutiao, a news aggregation app that became wildly popular in China, leveraging advanced AI algorithms for personalized content delivery.</p>
+                </div>
+            </div>
 
-        <div class="bg-gray-800 rounded-xl shadow-2xl p-6 mb-8 border border-gray-700" id="timeline-container">
-        </div>
+            <!-- Douyin and TikTok -->
+            <div class="timeline-event">
+                <div class="event-year">2016</div>
+                <div class="event-title green">Douyin (China) and TikTok (Global)</div>
+                <p class="event-description">
+                    ByteDance launched Douyin in China and TikTok for international audiences. TikTok became the first app to make short-form video a global phenomenon.
+                </p>
+                <button onclick="toggleInfo('info-2016')">Learn More</button>
+                <div id="info-2016" class="more-info">
+                    <p>Douyin became a cultural phenomenon in China, while TikTok's user-friendly interface, addictive algorithms, and global reach made it one of the most downloaded apps worldwide.</p>
+                </div>
+            </div>
 
-        <div class="flex justify-center gap-4">
-            <button id="prevBtn" class="px-6 py-2 rounded-lg bg-gray-700 cursor-not-allowed">
-                Previous
-            </button>
-            <button id="nextBtn" class="px-6 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white">
-                Next
-            </button>
-        </div>
+            <!-- Other Apps -->
+            <div class="timeline-event">
+                <div class="event-year">2018</div>
+                <div class="event-title green">Jianying and Toutiao</div>
+                <p class="event-description">
+                    ByteDance released Jianying, a video editing app, and continued to enhance Toutiao, a news aggregation app.
+                </p>
+            </div>
 
-        <div class="mt-4 text-center text-gray-400" id="progress">
-            Chapter 0 of 5
+            <!-- TikTok Ban -->
+            <div class="timeline-event">
+                <div class="event-year">2020</div>
+                <div class="event-title red">TikTok Faces U.S. Ban</div>
+                <p class="event-description">
+                    The U.S. government raised national security concerns over TikTok, citing ByteDance's Chinese ownership. Discussions of potential bans began.
+                </p>
+                <button onclick="toggleInfo('info-2020')">Learn More</button>
+                <div id="info-2020" class="more-info">
+                    <p>The U.S. accused ByteDance of collecting sensitive user data and sharing it with the Chinese government, leading to investigations and political debates.</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <script>
-        const timeline = [
-            {
-                year: "2012",
-                event: "ByteDance Founded",
-                description: "Founded by Zhang Yiming in Beijing",
-                impact: "Started as a news aggregator company, showing early signs of powerful AI-driven content recommendation systems.",
-                globalContext: "At this time, Facebook dominated social media, and short-form video wasn't yet mainstream.",
-                type: "company"
-            },
-            {
-                year: "2024",
-                event: "Pre-Ban Developments",
-                description: "TikTok's dominant position raises concerns",
-                impact: "Platform reaches over 170 million active users in the US alone",
-                globalContext: "Growing global debate over social media regulation and data sovereignty",
-                usaConcerns: "Intensified legislative scrutiny and security investigations",
-                type: "milestone"
-            },
-            {
-                year: "January 19, 2025",
-                event: "U.S. Ban Implementation",
-                description: "TikTok removed from major app stores",
-                impact: "Service disruption affects millions of US users",
-                globalContext: "Global tech community watches US actions closely",
-                usaConcerns: "Government cites national security concerns related to ByteDance ownership",
-                type: "critical"
-            },
-            {
-                year: "January 2025",
-                event: "Supreme Court Decision",
-                description: "Court upholds legislation mandating ByteDance divestment",
-                impact: "Legal precedent set for foreign-owned app regulation",
-                globalContext: "International discussion on digital sovereignty intensifies",
-                usaConcerns: "Reinforcement of government authority over foreign tech platforms",
-                type: "legal"
-            },
-            {
-                year: "January 19, 2025",
-                event: "Temporary Service Restoration",
-                description: "President-elect proposes 50% US ownership solution",
-                impact: "Potential new model for international tech governance",
-                globalContext: "Other countries consider similar ownership requirements",
-                usaConcerns: "Ongoing negotiations for restructured ownership and operations",
-                type: "development",
-                status: "pending"
-            }
-        ];
-
-        let currentStep = 0;
-        const container = document.getElementById('timeline-container');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        const progress = document.getElementById('progress');
-
-        function createTimelineItem(item, index) {
-            const div = document.createElement('div');
-            div.className = `timeline-item mb-6 p-6 rounded-lg ${
-                item.type === 'critical' ? 'critical-event' :
-                item.type === 'development' ? 'development-event' :
-                'standard-event'
-            }`;
-
-            div.innerHTML = `
-                <div class="flex justify-between items-center">
-                    <span class="text-2xl font-bold text-white">${item.year}</span>
-                    <span class="px-4 py-1 rounded-full text-sm ${
-                        item.type === 'critical' ? 'bg-red-700' :
-                        item.type === 'development' ? 'bg-yellow-700' :
-                        'bg-blue-700'
-                    } text-white">
-                        ${item.type}
-                    </span>
-                </div>
-                
-                <h3 class="text-2xl font-bold mt-3 text-white">${item.event}</h3>
-                <p class="text-gray-300 mt-2">${item.description}</p>
-                
-                <div class="mt-4 grid grid-cols-1 gap-4">
-                    <div class="bg-gray-900/50 p-4 rounded-lg">
-                        <h4 class="text-blue-400 font-semibold">Global Impact</h4>
-                        <p class="text-gray-300">${item.globalContext}</p>
-                    </div>
-                    
-                    ${item.usaConcerns ? `
-                        <div class="bg-gray-900/50 p-4 rounded-lg">
-                            <h4 class="text-red-400 font-semibold">U.S. Response</h4>
-                            <p class="text-gray-300">${item.usaConcerns}</p>
-                        </div>
-                    ` : ''}
-                </div>
-
-                ${item.status === 'pending' ? `
-                    <div class="pending-status">
-                        <span class="mr-2">🔄</span>
-                        Situation Developing
-                    </div>
-                ` : ''}
-            `;
-
-            return div;
-        }
-
-        function updateTimeline() {
-            container.innerHTML = '';
-            for (let i = 0; i < currentStep; i++) {
-                const item = createTimelineItem(timeline[i], i);
-                container.appendChild(item);
-                setTimeout(() => item.classList.add('visible'), 50 * i);
-            }
-
-            prevBtn.className = `px-6 py-2 rounded-lg ${
-                currentStep === 0 ? 'bg-gray-700 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700 text-white'
-            }`;
-            
-            nextBtn.className = `px-6 py-2 rounded-lg ${
-                currentStep === timeline.length ? 'bg-gray-700 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700 text-white'
-            }`;
-
-            progress.textContent = `Chapter ${currentStep} of ${timeline.length}`;
-        }
-
-        prevBtn.addEventListener('click', () => {
-            if (currentStep > 0) {
-                currentStep--;
-                updateTimeline();
-            }
-        });
-
-        nextBtn.addEventListener('click', () => {
-            if (currentStep < timeline.length) {
-                currentStep++;
-                updateTimeline();
-            }
-        });
-
-        // Initialize timeline
-        updateTimeline();
-
-        // Animate header on load
-        gsap.from("#header", {
-            duration: 1,
-            y: -50,
-            opacity: 0,
-            ease: "power3.out"
-        });
-    </script>
+    <footer>
+        <p>Created by <a href="https://www.youtube.com/@ITSamuraiTeacher" target="_blank">IT Samurai Teacher</a></p>
+        <p>Explore technology and innovations on my <a href="https://www.youtube.com/@ITSamuraiTeacher" target="_blank">YouTube Channel</a>.</p>
+    </footer>
 </body>
 </html>
