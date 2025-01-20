@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Revolution Timeline</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Inline styles for simplicity */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #1a1a1a, #333);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ff4d4d;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #ff7878;
+        }
+        .timeline {
+            margin-top: 20px;
+            border-left: 2px solid #555;
+            padding-left: 20px;
+        }
+        .timeline-event {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .timeline-event::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            background: #ff4d4d;
+            border-radius: 50%;
+        }
+        .event-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #ff7878;
+        }
+        .event-year {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #ff9999;
+            margin-bottom: 5px;
+        }
+        .event-description {
+            font-size: 0.95em;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The TikTok Revolution</h1>
+        <h2>ByteDance's Rise and America's Response</h2>
+        <div class="timeline">
+            <div class="timeline-event">
+                <div class="event-year">2012</div>
+                <div class="event-title">ByteDance Founded</div>
+                <p class="event-description">
+                    Founded by Zhang Yiming in Beijing. ByteDance started as a news aggregator company, showing early signs of powerful AI-driven content recommendation systems.
+                </p>
+            </div>
+            <div class="timeline-event">
+                <div class="event-year">2024</div>
+                <div class="event-title">Pre-Ban Developments</div>
+                <p class="event-description">
+                    TikTok's dominant position raises concerns with over 170 million active users in the US alone. Growing global debate over social media regulation and data sovereignty.
+                </p>
+            </div>
+            <div class="timeline-event">
+                <div class="event-year">January 19, 2025</div>
+                <div class="event-title">U.S. Ban Implementation</div>
+                <p class="event-description">
+                    TikTok is removed from major app stores. Service disruption affects millions of US users as the government cites national security concerns.
+                </p>
+            </div>
+            <div class="timeline-event">
+                <div class="event-year">January 2025</div>
+                <div class="event-title">Supreme Court Decision</div>
+                <p class="event-description">
+                    Court upholds legislation mandating ByteDance divestment, setting a legal precedent for foreign-owned app regulation.
+                </p>
+            </div>
+            <div class="timeline-event">
+                <div class="event-year">January 19, 2025</div>
+                <div class="event-title">Temporary Service Restoration</div>
+                <p class="event-description">
+                    President-elect proposes 50% US ownership solution, potentially creating a new model for international tech governance.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
