@@ -6,7 +6,6 @@
     <title>TikTok Revolution Timeline</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Inline styles for simplicity */
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(to bottom, #1a1a1a, #333);
@@ -15,7 +14,7 @@
             padding: 0;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -53,58 +52,80 @@
         .event-title {
             font-size: 1.2em;
             font-weight: bold;
-            color: #ff7878;
         }
         .event-year {
             font-size: 1.1em;
             font-weight: bold;
-            color: #ff9999;
             margin-bottom: 5px;
         }
         .event-description {
             font-size: 0.95em;
-            color: #ddd;
+        }
+        .green {
+            color: #00ff00; /* Green for apps */
+        }
+        .red {
+            color: #ff4d4d; /* Red for banned apps */
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>The TikTok Revolution</h1>
-        <h2>ByteDance's Rise and America's Response</h2>
+        <h2>ByteDance's Innovations and Challenges</h2>
         <div class="timeline">
+            <!-- ByteDance Founded -->
             <div class="timeline-event">
                 <div class="event-year">2012</div>
                 <div class="event-title">ByteDance Founded</div>
                 <p class="event-description">
-                    Founded by Zhang Yiming in Beijing. ByteDance started as a news aggregator company, showing early signs of powerful AI-driven content recommendation systems.
+                    ByteDance was founded by Zhang Yiming in Beijing. It started as a news aggregator company, showing early signs of powerful AI-driven content recommendation systems.
+                </p>
+            </div>
+
+            <!-- Apps Built by ByteDance -->
+            <div class="timeline-event">
+                <div class="event-year">2016</div>
+                <div class="event-title green">Apps Launched: Douyin (China) and TikTok (Global)</div>
+                <p class="event-description">
+                    ByteDance launched <span class="green">Douyin</span> in China, followed by <span class="green">TikTok</span> for international audiences. TikTok became the first app to take short-form video global.
                 </p>
             </div>
             <div class="timeline-event">
-                <div class="event-year">2024</div>
-                <div class="event-title">Pre-Ban Developments</div>
+                <div class="event-year">2018</div>
+                <div class="event-title green">Acquired Musical.ly</div>
                 <p class="event-description">
-                    TikTok's dominant position raises concerns with over 170 million active users in the US alone. Growing global debate over social media regulation and data sovereignty.
+                    ByteDance acquired <span class="green">Musical.ly</span> and merged it with TikTok, enhancing its global appeal.
+                </p>
+            </div>
+            <div class="timeline-event">
+                <div class="event-year">2019</div>
+                <div class="event-title green">Jianying and Toutiao Apps</div>
+                <p class="event-description">
+                    ByteDance introduced <span class="green">Jianying</span> (a video editing app) and <span class="green">Toutiao</span> (a popular news aggregation app in China).
+                </p>
+            </div>
+
+            <!-- U.S. Ban Developments -->
+            <div class="timeline-event">
+                <div class="event-year">2020</div>
+                <div class="event-title red">U.S. Ban Concerns</div>
+                <p class="event-description">
+                    The U.S. government raised national security concerns over <span class="red">TikTok</span>, citing ByteDance's Chinese ownership. Discussions of potential bans began.
                 </p>
             </div>
             <div class="timeline-event">
                 <div class="event-year">January 19, 2025</div>
-                <div class="event-title">U.S. Ban Implementation</div>
+                <div class="event-title red">TikTok Removed from App Stores</div>
                 <p class="event-description">
-                    TikTok is removed from major app stores. Service disruption affects millions of US users as the government cites national security concerns.
+                    <span class="red">TikTok</span> was removed from major U.S. app stores due to national security concerns, disrupting service for millions of U.S. users.
                 </p>
             </div>
             <div class="timeline-event">
                 <div class="event-year">January 2025</div>
-                <div class="event-title">Supreme Court Decision</div>
+                <div class="event-title">Proposed Resolution</div>
                 <p class="event-description">
-                    Court upholds legislation mandating ByteDance divestment, setting a legal precedent for foreign-owned app regulation.
-                </p>
-            </div>
-            <div class="timeline-event">
-                <div class="event-year">January 19, 2025</div>
-                <div class="event-title">Temporary Service Restoration</div>
-                <p class="event-description">
-                    President-elect proposes 50% US ownership solution, potentially creating a new model for international tech governance.
+                    The President-elect proposed a plan to restore <span class="red">TikTok</span> operations by mandating 50% U.S. ownership.
                 </p>
             </div>
         </div>
